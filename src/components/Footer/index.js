@@ -1,18 +1,17 @@
 import React from 'react';
 import { FooterBase } from './styles';
+import Logo from '../../assets/images/Logo.png';
+import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
     <FooterBase>
-      <a href="https://www.alura.com.br/">
-        <img src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg" alt="Logo Alura" />
-      </a>
+      <Link to='/'>
+      <img src={Logo} alt="Logo Alura" style={{ maxWidth: '105px' }} />
+      </Link>
       <p>
-        Orgulhosamente criado durante a
-        {' '}
-        <a href="https://www.alura.com.br/">
-          Imersão React da Alura
-        </a>
+        Criado durante a{' '}
+        <a href="https://www.alura.com.br/">Imersão React da Alura</a>
       </p>
     </FooterBase>
   );

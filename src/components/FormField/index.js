@@ -10,7 +10,6 @@ const FormFieldWrapper = styled.div`
   input[type="color"] {
     padding-left: 56px;
   }
-  padding-right: 56px;
 `;
 
 const Label = styled.label``;
